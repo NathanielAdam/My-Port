@@ -1,0 +1,5 @@
+<div class="side-nav">
+    <div *ngFor="let naveItem of navItems" class="nav-item">
+        <h3 routerLink="/{{naveItem.link}}"  class="nav-title">{{naveItem.title}}</h3>
+    </div>
+</div>
