@@ -2,7 +2,7 @@
     height: 100%;
     width:10%;
     background-color:orange;
-    position:absolute;
+    position:fixed;
     left: 0;
     top: 0;
     border-right: 2px black solid;
@@ -16,4 +16,8 @@
 .side-title{
     padding: 5px;
     text-align: center;
+}
+
+.selected{
+    font-weight: 100;
 }

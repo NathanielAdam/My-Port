@@ -1,6 +1,20 @@
 <div class="content">
-    <h1>Overview</h1>
-    <p>Here I present everything I do, including 'Hello World!' apps. It's a good roadmap and will help as I look to learn everything I can.</p>
-    <h2>"Completed" Projects</h2>
-    <p>Here we have projects that are "done" and are subjectable to being revisted for creativity sake or as a disection and re-tutoring of the languages used.</p>
+  <h1>Overview</h1>
+  <p>
+    Here I present everything I do, including 'Hello World!' apps. It's a good
+    roadmap and will help as I look to learn everything I can.
+  </p>
+  <hr />
+  <h2>"Completed" Projects</h2>
+  <p>
+    Here we have projects that are "done" and are subjectable to being revisted
+    for creativity sake or as a disection and re-tutoring of the languages used.
+    It should go without saying but this portfolio is in and of itself a project
+    being worked on and maintained.
+  </p>
+  <div class="project-display-container">
+    <div class="projects" *ngFor="let project of projects">
+      <app-project-display [project]="project"></app-project-display>
+    </div>
+  </div>
 </div>

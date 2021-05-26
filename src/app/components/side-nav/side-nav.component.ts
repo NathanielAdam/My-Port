@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '@angular/router';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,37 +7,41 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav.component.css']
 })
 export class SideNavComponent implements OnInit {
-
-  constructor() { }
+  selected:any
+  notSelected:any
+  constructor(
+    private routes:Router
+  ) { }
+  location:String | undefined
   navItems= [
     {
       title:"About",
       icon:"home",
-      link:"about",
-      color:"red"
-    },
-    {
-      title:"Soft Skills",
-      icon:"softskills",
-      link:"softskills",
+      link:"/about",
       color:"red"
     },
     {
       title:"Tech Skills",
       icon:"home",
-      link:"techskills",
+      link:"/techskills",
       color:"red"
     },
     {
       title:"Projects",
       icon:"home",
-      link:"projects",
+      link:"/projects",
       color:"red"
     }
   ]
   ngOnInit(): void {
+    this.routeWatcher()
   }
-  navigate(e: any){
-    console.log(e)
+  routeWatcher(){
+    this.routes.events.subscribe(event =>{
+      if(event instanceof NavigationEnd){
+        console.log(event.url)
+        this.location = event.url
+      }
+    })
   }
 }

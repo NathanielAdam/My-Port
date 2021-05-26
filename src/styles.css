@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* defaults */
+*{
+    font-family: sans-serif;
+}
+html{
+    background-color: seashell;
+}
+/* universal class styles */
 .content{
     margin-left:10%;
 }

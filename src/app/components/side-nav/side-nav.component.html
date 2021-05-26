@@ -1,5 +1,11 @@
 <div class="side-nav">
-    <div *ngFor="let naveItem of navItems" class="nav-item">
-        <h3 routerLink="/{{naveItem.link}}"  class="nav-title">{{naveItem.title}}</h3>
+    <div *ngFor="let navItem of navItems" class="nav-item">
+        <h3
+        [ngClass]="{'selected': navItem.link == location }" 
+        routerLink="{{navItem.link}}"  
+        class="nav-title"
+        >
+        {{navItem.title}}
+        </h3>
     </div>
 </div>

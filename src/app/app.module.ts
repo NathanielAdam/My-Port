@@ -8,6 +8,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
 import { TechSkillsComponent } from './components/tech-skills/tech-skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectDisplayComponent } from './components/project-display/project-display.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     AboutComponent,
     SoftSkillsComponent,
     TechSkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectDisplayComponent
   ],
   imports: [
     BrowserModule,

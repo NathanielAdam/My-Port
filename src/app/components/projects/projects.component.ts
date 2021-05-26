@@ -8,7 +8,36 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
 
   constructor() { }
-
+  projects : any = [
+    {
+      name:"test",
+      url:"google.com"
+    },
+    {
+      name:"test",
+      url:"google.com"
+    },
+    {
+      name:"test",
+      url:"google.com"
+    },
+    {
+      name:"test",
+      url:"google.com"
+    },
+    {
+      name:"test",
+      url:"google.com"
+    },
+    {
+      name:"test",
+      url:"google.com"
+    },{
+      name:"test",
+      url:"google.com"
+    },
+  ]
+  
   ngOnInit(): void {
   }
 

@@ -1,0 +1,8 @@
+.projects{
+    display: inline-block;
+    padding:1rem;
+    margin: 2rem;
+    width: 27%;
+    height: 10rem;
+    outline: solid black;
+}
