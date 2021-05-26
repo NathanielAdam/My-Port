@@ -9,6 +9,7 @@ import { SoftSkillsComponent } from './components/soft-skills/soft-skills.compon
 import { TechSkillsComponent } from './components/tech-skills/tech-skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectDisplayComponent } from './components/project-display/project-display.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectDisplayComponent } from './components/project-display/project-di
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
